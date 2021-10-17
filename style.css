@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Merriweather+Sans&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    color: white;
+    background: rgb(87,141,246);
+    font-size: 20px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+.base {
+    display: grid;
+    padding: 3.5rem;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    background: #1b2259;
+    border-radius: 10px;    
+}
+
+.contact {
+    padding: 0 4rem 0 2rem;
+}
+
+header {
+    width: 90%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.info {
+    width: 75%;
+    padding: 3rem 0;
+    list-style: none;
+}
+
+.info li {
+    padding: 1rem 1.5rem;
+    border-style: solid;
+    border-color: #1b2259;
+}
+
+.info li:hover {
+    background: #222b6d;
+    border-style: solid;
+    border-color: #234AE2;
+    border-radius: 10px;    
+    transition: 1s;
+}
+
+.info li:last-of-type  {
+    padding-left: 1.8rem;
+}
+
+.info i {
+    margin-right: 1.5rem;
+    color: #234AE2;
+}
+
+.info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-div {
+    padding-left: 2rem;
+}
+
+.social {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;   
+    padding-left: 3rem; 
+    list-style: none;
+}
+
+.social li{
+    position: relative;    
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    height: 65px;
+    width: 65px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.social a {
+    color: inherit;
+}
+
+.social i {
+    position: absolute;
+    top: 20px;
+    left: 21px;
+}
+
+.social li:hover{
+    background-color: #234AE2;
+    transition: 1s;
+}
+
+ul.social {
+    margin: 0;
+    padding: 0;
+}
+
+.form-div {
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    color: #1B2259;
+    background: #F9FAFC;
+    border-radius: 10px;
+}
+
+.form-div form {
+    padding: 2rem;
+}
+
+.form-div label {
+    font-weight: bold;
+}
+
+.form-div input {
+    margin: 7px 0 20px 0;
+    padding: 5px 10px 5px 50px;
+    width: 100%;
+    height: 50px;
+    background: #F9FAFC;
+    border-style: solid;
+    border-color: #d6d6d6;
+    border-radius: 5px;
+    border-width: 2px;
+    font-size: 20px;
+    box-sizing: border-box; 
+}
+
+.form-div .inputWithIcon{
+    position: relative;
+}
+
+.form-div .inputWithIcon input:focus {
+    outline: none;
+    border-color: #234AE2;
+}
+
+.form-div .inputWithIcon input:focus + i{   
+    color: #234AE2;
+}
+
+.form-div .inputWithIcon i {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    padding: 9px 8px;
+    color: #d6d6d6;
+}
+
+
+.form-div textarea {
+    width: 100%;
+    height: 150px;
+    margin: 7px 0 30px 0;
+    padding: 15px 10px 5px 16px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    border-color: #F9FAFC;
+    border-width: 2px;
+    font-size: 20px;
+    box-sizing: border-box; 
+    resize: none;
+}
+
+.form-div textarea::placeholder {
+    font-family: 'Assistant', sans-serif;
+}
+
+.form-div textarea:focus {
+    outline: none;
+    border-color: #234AE2;
+}
+
+.form-div button {
+    margin-left: 110px;
+    padding: 1rem 3rem;
+    color: #F9FAFC;
+    background: #234AE2;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 1200px) { 
+    .container {
+        grid-template-columns: 90%;
+        height: 125%;
+    } 
+    .base {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+    
+    .contact {
+        padding: 10px;
+    }
+    
+    header {
+        width: 100%;
+    }    
+    .info {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .info li {
+        padding: 10px;
+    }
+        
+    .info li:last-of-type  {
+        padding-left: 0;
+    }
+    
+    .info i {
+        margin-right: 0;
+    }
+        
+    .social-div {
+        padding-left: 0;
+    }
+    
+    .social {
+        padding-left: 0; 
+    }
+    
+    .social li{
+        position: relative;    
+        display: inline-block;
+        margin: 0;
+        height: 65px;
+        width: 65px;
+        font-size: 0;
+        border-radius: 50%;
+    }
+    
+    .social a {
+        color: inherit;
+    }
+    
+    .social i {
+        position: absolute;
+        top: 20px;
+        left: 21px;
+    }
+    
+    .form-div {
+        display: grid;
+        justify-content: center;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .form-div form {
+        padding: 20px;
+    }
+        
+    .form-div input {
+        margin: 0;
+        padding: 0 0 0 35px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        border-width: 2px;
+        font-size: 20px;
+        box-sizing: border-box; 
+    }
+    
+    .form-div .inputWithIcon{
+        position: relative;
+    }
+    
+    .form-div .inputWithIcon i {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        padding: 0;
+        color: #d6d6d6;
+    }
+        
+    .form-div textarea {
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+        border-width: 2px;
+        font-size: 20px;
+    }
+    
+    .form-div button {
+        margin-left: 50%;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}
